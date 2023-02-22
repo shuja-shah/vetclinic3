@@ -140,3 +140,6 @@ like
 
 `UPDATE tablename SET columnname = 'value' WHERE unique_idetifier = 'primaryKey';`
 
+You can also update and add or delete columns
+
+`UPDATE tablename SET columnname = 'value' , column2Name = 'value2' WHERE unique_idetifier = 'primaryKey';`
