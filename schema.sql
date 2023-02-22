@@ -13,3 +13,16 @@ ALTER TABLE
 ADD
     COLUMN species VARCHAR(100);
 
+/* First Transaction Update */
+BEGIN;
+UPDATE animals SET species='unspecified';
+select * from animals;
+ROLLBACK;
+select * from animals;
+
+
+/* Second Transaction Update */
+BEGIN;
+UPDATE animals SET species='digimon' WHERE name LIKE '%mon';
+UPDATE animals SET species='pokemon' WHERE species IS NULL;
+COMMIT;
