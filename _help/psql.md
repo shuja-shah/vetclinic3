@@ -143,3 +143,18 @@ like
 You can also update and add or delete columns
 
 `UPDATE tablename SET columnname = 'value' , column2Name = 'value2' WHERE unique_idetifier = 'primaryKey';`
+
+
+You can also Have a look at this [link](https://www.postgresqltutorial.com/postgresql-update/)
+
+You can also use BEGIN before an update and ROLLPACK to undo changes.
+You can also make Savpoints like this
+    
+    `
+    BEGIN;
+    SAVEPOINT mysavepoint;
+    UPDATE tablename SET columnname = 'value' WHERE unique_idetifier = 'primaryKey';
+    ROLLBACK TO SAVEPOINT mysavepoint;
+    COMMIT;
+    `
+    
