@@ -15,14 +15,57 @@ ADD
 
 /* First Transaction Update */
 BEGIN;
-UPDATE animals SET species='unspecified';
-select * from animals;
-ROLLBACK;
-select * from animals;
 
+UPDATE
+    animals
+SET
+    species = 'unspecified';
+
+select
+    *
+from
+    animals;
+
+ROLLBACK;
+
+select
+    *
+from
+    animals;
 
 /* Second Transaction Update */
 BEGIN;
-UPDATE animals SET species='digimon' WHERE name LIKE '%mon';
-UPDATE animals SET species='pokemon' WHERE species IS NULL;
+
+UPDATE
+    animals
+SET
+    species = 'digimon'
+WHERE
+    name LIKE '%mon';
+
+UPDATE
+    animals
+SET
+    species = 'pokemon'
+WHERE
+    species IS NULL;
+
 COMMIT;
+
+/* Third Transaction Update */
+BEGIN;
+
+DELETE FROM
+    animals;
+
+SELECT
+    *
+FROM
+    animals;
+
+ROLLBACK;
+
+SELECT
+    *
+FROM
+    animals;
