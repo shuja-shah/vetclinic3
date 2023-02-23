@@ -18,3 +18,5 @@ CREATE TABLE IF NOT EXISTs owners(
     full_name VARCHAR(60),
     age INT
 );
+
+CREATE TABLE IF NOT EXISTS species(id SERIAL PRIMARY KEY, name VARCHAR(50));
