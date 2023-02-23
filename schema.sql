@@ -13,3 +13,8 @@ ALTER TABLE
 ADD
     COLUMN species VARCHAR(100);
 
+CREATE TABLE IF NOT EXISTs owners(
+    id SERIAL PRIMARY KEY,
+    full_name VARCHAR(60),
+    age INT
+);
