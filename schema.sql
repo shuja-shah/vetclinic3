@@ -20,3 +20,5 @@ CREATE TABLE IF NOT EXISTs owners(
 );
 
 CREATE TABLE IF NOT EXISTS species(id SERIAL PRIMARY KEY, name VARCHAR(50));
+
+ ALTER TABLE animals ADD species_id INT;
