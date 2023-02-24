@@ -34,7 +34,7 @@
 **Syed Shuja Hussain**
 
 - GitHub: [Github](https://github.com/shuja-shah)
-- Twitter: [Twitter](https://twitter.com/SyedShujaHussa3))
+- Twitter: [Twitter](https://twitter.com/SyedShujaHussa3)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/SyedShujaHussa/)
 
 ## Contributing
