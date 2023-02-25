@@ -58,3 +58,11 @@ CREATE TABLE IF NOT EXISTS specializations (
     CONSTRAINT vets_fk FOREIGN KEY(vets_id) REFERENCES vets (id),
     CONSTRAINT species_fk FOREIGN KEY(species_id) REFERENCES species (id)
 );
+
+CREATE TABLE IF NOT EXISTS visits (
+    animals_id INT,
+    vets_id INT,
+    visist_date date,
+    CONSTRAINT vets_fk FOREIGN KEY(vets_id) REFERENCES vets (id),
+    CONSTRAINT animals_fk FOREIGN KEY(animals_id) REFERENCES animals (id)
+);
