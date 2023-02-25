@@ -66,3 +66,4 @@ CREATE TABLE IF NOT EXISTS visits (
     CONSTRAINT vets_fk FOREIGN KEY(vets_id) REFERENCES vets (id),
     CONSTRAINT animals_fk FOREIGN KEY(animals_id) REFERENCES animals (id)
 );
+/* Note :- In order to create visits table i had to update animals and ADD CONTRAINT unique_id to animals table. */
